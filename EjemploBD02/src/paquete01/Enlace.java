@@ -46,7 +46,7 @@ public class Enlace {
             Statement statement = obtenerConexion().createStatement();
             String data = String.format("INSERT INTO autos (placa,"
                     + "valor_matricula) "
-                    + "values ('%s', %s)", 
+                    + "values ('%s', %.2f)", 
                     auto.obtenerPlaca(), 
                     auto.obtenerValorMatricula());
             System.out.println(data);
